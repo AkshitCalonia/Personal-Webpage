@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
+    <script src="funtioning.js"></script>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+
+      html {
+        box-sizing: border-box;
+      }
+
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+
+      .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+      }
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+      }
+
+      .about-section {
+        padding: 50px;
+        text-align: center;
+        background-color: #474e5d;
+        color: white;
+      }
+
+      .cnt {
+        padding: 0 16px;
+      }
+
+      .cnt::after, .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .title {
+        color: grey;
+      }
+
+      .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      .button:hover {
+        background-color: #555;
+      }
+
+      @media screen and (max-width: 650px) {
+        .column {
+          width: 100%;
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="/index.html"><i><span style="margin-left: 30px; color: green;">Akshit Calonia</span></i></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="family.html">My Family</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/fun.html">Fun Here</a>
+              </li>
+            </ul>
+          </div>
+          <a class="navbar-brand" href="#">
+              <img src="https://media.licdn.com/dms/image/C5603AQFsKws-ua7jzA/profile-displayphoto-shrink_800_800/0/1650642727555?e=2147483647&v=beta&t=nYWWCIqaB2qSMcQLsGzp8ukWwZlOL6tEu3jYDAxaU18" width="40" height="40" class="d-inline-block align-top rounded-circle" alt="">
+              <img id="sign" width="25" height="25" src="https://pngimg.com/d/letter_a_PNG27.png" alt="A">
+          </a>
+        </nav>
+
+  <div class="about-section">
+    <h1>About Me</h1>
+    <p>Nationality: Earthian</p>
+  </div>
+
+  <h2 style="text-align:center"><b><u>My Family</u></b></h2>
+      <div class="row">
+        <div class="column">
+            <div class="card">
+              <img src="https://media.licdn.com/dms/image/C4E03AQF6ZqSTu8lftA/profile-displayphoto-shrink_100_100/0/1631286716102?e=1696464000&v=beta&t=PH81omgX1ggVJ717qpgs92SljJ8gbGv5700UCnTzhro" alt="DAD" style="width:100%">
+              <div class="cnt">
+                  <h2>My Dad</h2>
+                  <p class="title">Real Estate</p>
+                  <p>He is the real Hero!</p>
+                  <p>
+                      <form action="mailto:sanjaycalonia4@gmail.com">
+                      <button class="button">Contact</button>
+                      </form>
+                  </p>
+              </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="column">
+          <div class="card">
+            <img src="https://media.licdn.com/dms/image/C5103AQHYkxOarlngqQ/profile-displayphoto-shrink_100_100/0/1516633180937?e=1696464000&v=beta&t=zuCIAM5fH5P4AeRC4DLu4QpqDGuzurJ92ZNs-jPf7JA" alt="mom" style="width:100%">
+            <div class="cnt">
+                <h2>My Mom</h2>
+                <p class="title">Handles Trademarks</p>
+                <p>She is just lovely</p>
+                <p>
+                    <form action="mailto:parveencalonia@gmail.com">
+                    <button class="button">Contact</button>
+                    </form>
+                </p>
+            </div>
+          </div>
+      </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="data:image/png;base64,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" alt="sis" style="width:100%">
+        <div class="cnt">
+          <h2>My Lil Sis</h2>
+          <p class="title">Designer</p>
+          <p>She loves art</p>
+          <p>
+              <form action="mailto:dishitacalonia@gmail.com">
+              <button class="button">Contact</button>
+              </form>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
